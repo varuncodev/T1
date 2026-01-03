@@ -237,17 +237,77 @@
 
 // Fizz Buzzz   question 
 
-let n =Number(prompt("enter number"))
+// let n =Number(prompt("enter number"))
 
-if(n%3===0  && n%5===0){
-    console.log("FizzBuzz");
-}
-else if(n%5===0){
-    console.log("Buzz");
-}
-else if(n%3===0){
-    console.log("Fizz");
-}
-else{
-    console.log("Neither divisible by 3 or 5");
+// if(n%3===0  && n%5===0){
+//     console.log("FizzBuzz");
+// }
+// else if(n%5===0){
+//     console.log("Buzz");
+// }
+// else if(n%3===0){
+//     console.log("Fizz");
+// }
+// else{
+//     console.log("Neither divisible by 3 or 5");
+// }
+
+
+// // making simple calculator using switch 
+
+// let a=Number(prompt("Enter first number"))
+// let b=Number(prompt("Enter Second Number"))
+// let s ="/"
+// switch (s){
+//     case "+":
+//         console.log(a+b);
+//         break
+
+//     case "-" :
+//         console.log(a-b);  
+//         break
+        
+//     case "*":
+//         console.log(a*b);
+//         break
+
+//     case "/":
+//         console.log(a/b);
+//         break
+        
+//         default:
+//             console.log("unknown");
+
+// }
+
+
+
+
+// Atm machine question
+
+let num1 = Number(prompt("enter the 1.check balance 2.withdraw 3.deposit "))
+let totalblance =5000
+
+
+if(num1 ===1){
+    console.log(totalblance);
+
+}else if(num1 ===2){
+    let withdraw =Number(prompt("enter amount"))
+    if(withdraw<totalblance && withdraw >0){
+        totalblance =totalblance -withdraw
+        console.log("withdraw succssfully",withdraw ,"Total balace is ",totalblance);
+    }
+    else{
+        console.log("please enter valid amount");
+    }
+}else if(num1 ===3){
+    let deposit =Number(prompt("enter amount"))
+    if(deposit>0 ){
+        totalblance =totalblance+deposit
+        console.log("deposit successfully",deposit,"total balance is ",totalblance);
+    }
+    else{
+        console.log("please enter a valid amount");
+    }
 }
