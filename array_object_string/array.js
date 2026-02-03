@@ -331,15 +331,21 @@
 
 //make the first ltter of string  in uppercase
 
-let str = "how are you?"
-let result =str.split(" ").map((elem,index)=>{
-  return elem.charAt(0).toUpperCase()+elem.slice(1)
-})
+// let str = "how are you?"
+// let result =str.split(" ").map((elem,index)=>{
+//   return elem.charAt(0).toUpperCase()+elem.slice(1)
+// })
 
-let raja =result.join(" ")
-console.log(raja)   ///original string never change
+// let raja =result.join(" ")
+// console.log(raja)   ///original string never change
 
 
 
+
+
+let str=2
+for(let i =1;i<=str;i++){
+  console.log(i,"*");
+}
 
 
